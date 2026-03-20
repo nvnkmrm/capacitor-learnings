@@ -2,7 +2,7 @@
 
 ---
 
-## 0. What is a Service Worker?
+## What is a Service Worker?
 
 A **Service Worker** is a JavaScript file that runs in the background, in a **separate thread** from the main browser page. It acts as a **programmable network proxy** sitting between your web app and the network.
 
@@ -41,9 +41,9 @@ navigator.serviceWorker.register('/sw.js')
 
 ---
 
-## 1. Possible Operations with Service Workers
+## Possible Operations with Service Workers
 
-### 1.1 Caching & Offline Support
+### Caching & Offline Support
 
 Cache assets during install so the app works offline.
 
@@ -70,7 +70,7 @@ self.addEventListener("fetch", (event) => {
 
 ---
 
-### 1.2 Network Strategies
+### Network Strategies
 
 #### Cache First (best for static assets)
 
@@ -130,7 +130,7 @@ self.addEventListener("fetch", (event) => {
 
 ---
 
-### 1.3 Background Sync
+### Background Sync
 
 Queue failed requests (e.g. form submissions) and retry when network is back.
 
@@ -160,7 +160,7 @@ self.addEventListener("sync", (event) => {
 
 ---
 
-### 1.4 Push Notifications
+### Push Notifications
 
 Receive push messages from a server even when the app is closed.
 
@@ -193,7 +193,7 @@ self.addEventListener("notificationclick", (event) => {
 
 ---
 
-### 1.5 Periodic Background Sync
+### Periodic Background Sync
 
 Run tasks (e.g. refresh data) periodically in the background.
 
@@ -212,7 +212,7 @@ self.addEventListener("periodicsync", (event) => {
 
 ---
 
-### 1.6 Intercepting & Modifying Requests
+### Intercepting & Modifying Requests
 
 Add auth headers to every outgoing request automatically.
 
@@ -231,7 +231,7 @@ self.addEventListener("fetch", (event) => {
 
 ---
 
-### 1.7 Sending Messages Between SW and Page
+### Sending Messages Between SW and Page
 
 ```js
 // sw.js → broadcast to all clients
@@ -257,7 +257,7 @@ self.addEventListener("message", (event) => {
 
 ---
 
-### 1.8 Cache Versioning & Cleanup
+### Cache Versioning & Cleanup
 
 Remove old caches when a new SW activates.
 
@@ -282,7 +282,7 @@ self.addEventListener("activate", (event) => {
 
 ---
 
-## 2. How Big Companies Use Service Workers
+## How Big Companies Use Service Workers
 
 ### Google (Search, Maps, Gmail)
 
@@ -318,7 +318,7 @@ self.addEventListener("activate", (event) => {
 
 ---
 
-## 3. Alternatives to Service Workers
+## Alternatives to Service Workers
 
 | Alternative                            | What it Does                              | Limitation vs SW                                          |
 | -------------------------------------- | ----------------------------------------- | --------------------------------------------------------- |
