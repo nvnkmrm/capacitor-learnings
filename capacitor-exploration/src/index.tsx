@@ -8,6 +8,11 @@ if ("serviceWorker" in navigator) {
       console.error("Service worker registration failed:", err);
     });
   });
+  navigator.serviceWorker.addEventListener("message", (event) => {
+    if (event.data?.type === "LOG") {
+      console.log(event.data.message);
+    }
+  });
 }
 
 const container = document.getElementById("root") as HTMLElement;
