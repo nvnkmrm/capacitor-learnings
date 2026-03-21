@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Capacitor Learnings</string>
+    <string name="title_activity_main">Capacitor Learnings</string>
+    <string name="package_name">com.nvnkmr.capacitor.learnings</string>
+    <string name="custom_url_scheme">com.nvnkmr.capacitor.learnings</string>
+</resources>
