@@ -5,7 +5,9 @@
   "scripts": {
     "start": "webpack serve --mode development --open",
     "build": "webpack --mode production",
-    "build:dev": "webpack --mode development"
+    "build:dev": "webpack --mode development",
+    "ios": "npx cap sync ios && npx cap open ios",
+    "android": "npx cap sync android && npx cap open android"
   },
   "dependencies": {
     "@capacitor/android": "8.2.0",
