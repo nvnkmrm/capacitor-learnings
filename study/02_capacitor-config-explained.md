@@ -1,4 +1,4 @@
-# Capacitor Config — Complete Guide (Simple Terms + Examples)
+# Capacitor Config — Complete Guide
 
 Capacitor uses a config file (`capacitor.config.ts`) at the root of your project to control how your web app behaves inside the native iOS/Android shell.
 
